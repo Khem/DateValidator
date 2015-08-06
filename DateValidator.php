@@ -12,7 +12,7 @@ class DateValidator
     /**
      * @var string
      */
-    private static $pattern = "#[-/]#";
+    private static $pattern = "#[-./]#";
 
     /**
      * @var string
