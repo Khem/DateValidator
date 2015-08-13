@@ -2,7 +2,7 @@
 
 /**
  * Class to validate date
- * accepts input date format that matches the pattern #[-./]#
+ * accepts input date format that matches the date separator pattern #[-./]#
  * checks for valid month, date and year in all combinations
  * validates as true if any of the combinations is valid
  */
@@ -47,7 +47,7 @@ class DateValidator
      */
     private static function validate()
     {
-        // if pattern is not match return false straightway
+        // if pattern does not not match return false straightway
         if (!preg_match(self::$pattern, self::$date)) {
             return false;
         }
